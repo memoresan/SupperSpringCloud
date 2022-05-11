@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CommonUtils" />
+        <module name="job-quartz" />
+        <module name="spark-flink-manager" />
+        <module name="SupperFlink" />
+        <module name="SupperSpark" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CommonUtils" target="8" />
+      <module name="job-quartz" target="8" />
+      <module name="spark-flink-manager" target="8" />
+      <module name="SupperFlink" target="8" />
+      <module name="SupperSpark" target="1.8" />
+      <module name="SupperSpringCloud" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

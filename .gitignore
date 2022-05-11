@@ -1,0 +1,6 @@
+# Project exclude paths
+/CommonUtils/target/
+/SupperFlink/target/
+/SupperSpark/target/
+/SupperSpringCloud/job-quartz/target/
+/SupperSpringCloud/spark-flink-manager/target/

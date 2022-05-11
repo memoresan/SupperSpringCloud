@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.airlift:stats:0.163">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../idea/maven-repo/io/airlift/stats/0.163/stats-0.163.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../idea/maven-repo/io/airlift/stats/0.163/stats-0.163-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../idea/maven-repo/io/airlift/stats/0.163/stats-0.163-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

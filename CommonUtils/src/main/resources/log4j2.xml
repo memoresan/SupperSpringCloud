@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" packages="util.log4j2.KafkaAppender,util.log4j2.CusLookup">
+    <properties>
+        <property name="LOG_HOME">D:/logs</property>
+        <property name="FILE_NAME">mylog</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l --- %m%n"/>
+        </Console>
+        <MyKafka name="Kafka" topic="${var:logFileName}">
+            <PatternLayout pattern="${var:logFileName1}"/>
+            <Property name="bootstrap.servers">192.168.16.176:1000</Property>
+        </MyKafka>
+
+
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+           <!-- <AppenderRef ref="Kafka"/>-->
+           <!-- <AppenderRef ref ='RollingFileInfo'/>-->
+           <!-- <AppenderRef ref="workflowAppender">-->
+           <!-- </AppenderRef>-->
+        </Root>
+    </Loggers>
+</Configuration>

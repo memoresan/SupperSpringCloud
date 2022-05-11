@@ -1,0 +1,12 @@
+package ${packageName};
+import ${methodPath};
+import org.apache.flink.table.functions.ScalarFunction;
+import util.annotation.UdfAnnotation;
+
+ public class ${className} extends ScalarFunction
+ {
+    public ${output} eval(${input}){
+        return ${method}(${value});
+    }
+
+ }

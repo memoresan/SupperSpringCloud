@@ -1,0 +1,10 @@
+database:
+  impala:
+    url: 1
+    userName: 2
+    passwd: 3
+
+kafka:
+  bootstrap:
+    servers: 192.168.16.176:2182
+

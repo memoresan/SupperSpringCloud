@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.prestosql:presto-client:312">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../idea/maven-repo/io/prestosql/presto-client/312/presto-client-312.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../idea/maven-repo/io/prestosql/presto-client/312/presto-client-312-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../idea/maven-repo/io/prestosql/presto-client/312/presto-client-312-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

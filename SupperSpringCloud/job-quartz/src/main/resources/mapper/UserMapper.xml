@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="core.mybatisplus.mapper.UserMapper">
+
+    <select id="selectByXml" resultType="core.entity.User">
+        SELECT * FROM t_user where name = #{name}
+    </select>
+
+    <select id="selectByMyWrapper" resultType="core.entity.User">
+        SELECT * FROM t_user ${ew.customSqlSegment}
+    </select>
+
+    <select id="selectAllByPage" resultType="core.entity.User">
+        SELECT * FROM t_user
+    </select>
+</mapper>

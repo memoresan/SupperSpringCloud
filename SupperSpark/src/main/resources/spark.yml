@@ -1,0 +1,5 @@
+#spark参数配置
+spark:
+  executor:
+    memory: 3
+    number: 4

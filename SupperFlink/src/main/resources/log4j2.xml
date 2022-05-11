@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <properties>
+        <property name="LOG_HOME">D:/logs</property>
+        <property name="FILE_NAME">mylog</property>
+    </properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l --- %m%n"/>
+        </Console>
+        <!--<RollingFile name="RollingFileInfo" fileName="${sys:user.home}/logs/${sys:dir}/${sys:logName}.log"
+                     filePattern="${sys:user.home}/logs/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+            &lt;!&ndash;控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）&ndash;&gt;
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+            <Policies>
+                &lt;!&ndash;按照时间&ndash;&gt;
+                &lt;!&ndash;<TimeBasedTriggeringPolicy interval="1"/>&ndash;&gt;
+                &lt;!&ndash; 按照大小&ndash;&gt;
+                <SizeBasedTriggeringPolicy size="100 MB"/>
+            </Policies>
+            &lt;!&ndash;按照保留最大的文件个数&ndash;&gt;
+            &lt;!&ndash; <DefaultRolloverStrategy max="10"/>&ndash;&gt;
+        </RollingFile>
+
+        <Routing name="workflowAppender">
+            <Routes pattern="${ctx:logFileName}">
+                <Route>
+                    <File name="File-${ctx:logFileName}" fileName="${sys:user.home}/logs/${ctx:logFileName}">
+                        <PatternLayout pattern="[%d{HH:mm:ss:SSS}] [%p] - %l - %m%n"/>
+                    </File>
+                    <Policies>
+                        &lt;!&ndash;按照时间&ndash;&gt;
+                        &lt;!&ndash;<TimeBasedTriggeringPolicy interval="1"/>&ndash;&gt;
+                        &lt;!&ndash; 按照大小&ndash;&gt;
+                        <SizeBasedTriggeringPolicy size="100 MB"/>
+                    </Policies>
+
+                </Route>
+
+            </Routes>
+        </Routing>-->
+
+
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <!--<AppenderRef ref ='RollingFileInfo'/>-->
+            <!--<AppenderRef ref="workflowAppender"/>-->
+        </Root>
+    </Loggers>
+</Configuration>

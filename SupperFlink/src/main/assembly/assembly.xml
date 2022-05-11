@@ -1,0 +1,32 @@
+<assembly>
+    <id>dist</id>
+    <formats>
+        <format>tar.gz</format>
+        <format>dir</format>
+    </formats>
+    <!--也可以是zip-->
+  <!--  <formats>
+        <format>zip</format>
+    </formats>-->
+    <fileSets>
+        <fileSet>
+            <!--以src/作为位置-->
+            <directory>src/main/resources</directory>
+            <outputDirectory>resources</outputDirectory>
+            <fileMode>0755</fileMode>
+            <excludes>
+                <exclude>a.txt</exclude>
+            </excludes>
+        </fileSet>
+    </fileSets>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+           <!-- <excludes>
+                <exclude>org.apache.flink:*</exclude>
+            </excludes>-->
+        </dependencySet>
+    </dependencySets>
+</assembly>

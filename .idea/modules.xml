@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BigDataProgram.iml" filepath="$PROJECT_DIR$/.idea/BigDataProgram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonUtils/CommonUtils.iml" filepath="$PROJECT_DIR$/CommonUtils/CommonUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupperFlink/SupperFlink.iml" filepath="$PROJECT_DIR$/SupperFlink/SupperFlink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupperSpark/SupperSpark.iml" filepath="$PROJECT_DIR$/SupperSpark/SupperSpark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupperSpringCloud/SupperSpringCloud.iml" filepath="$PROJECT_DIR$/SupperSpringCloud/SupperSpringCloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupperSpringCloud/job-quartz/job-quartz.iml" filepath="$PROJECT_DIR$/SupperSpringCloud/job-quartz/job-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupperSpringCloud/spark-flink-manager/spark-flink-manager.iml" filepath="$PROJECT_DIR$/SupperSpringCloud/spark-flink-manager/spark-flink-manager.iml" />
+    </modules>
+  </component>
+</project>
